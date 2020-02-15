@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Favourite Games</title>
+    <title>2020 Games</title>
+    <h1>2020 Games</h1>
     <script src="js/app.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
@@ -10,51 +11,60 @@
     <form id="new-form">
       <div id="form-wrapper">
         <div class="form-item">
-          <label for="title" class="primary">Title</label>
-          <input type="text" id="title" required/>
+          <label for="title" class="primary"></label>
+          <input type="text" id="title" placeholder = "Title" required/>
         </div>
 </br>
         <div class="form-item">
-          <label for="publisher" class="primary">Publisher</label>
-          <input type="text" id="publisher" required/>
+          <label for="publisher" class="primary"></label>
+          <input type="text" id="publisher" placeholder = "Publisher" required/>
         </div>
 </br>
-        <div class = "form-item">
-          <input type=radio id="over18" name="radiob" required>
-          <label for = "over18"> Over 18</label><br>
-          <input type=radio id="unde18" name ="radiob" required>
-          <label for = "under18"> Under 18</label><br>
-        </div>
-</br>
+
         <div class="form-item">
           <label for="genre" class="primary">Genre</label>
           <select id="genre">
-            <option value="" disabled selected></option>
             <option value="Action">Action/Adventure</option>
+            <option value="Driving">Driving</option>
             <option value="FPS">FPS</option>
+            <option value="MMO">MMO</option>
+            <option value="Platformer">Platformer</option>
+            <option value="Puzzle">Puzzle</option>
+            <option value="Sport">Sport</option>
             <option value="RPG">RPG</option>
+            <option value="Strategy">Strategy</option>
+            <option value="SurvivalHorror">Survival Horror</option>
           </select>
         </div>
-      </div>
-</br>
-
-<div class ="form-item"
-<label for="image" class="image">Image Upload</label>
-<input type='file' />
-<br><img id="myImg" src="#" alt="your image" height=200 width=100>
-</br>
-      <input type="submit" value="save"/>
-    </form>
 
 </br>
 
-    <h1>Favourite Games</h1>
+        <div class = "form-item">
+          <input type=radio id="completed" name="radiob" required>
+          <label for = "completed">Completed</label><br>
+          <input type=radio id="unde18" name ="radiob" required>
+          <label for = "completed">Backlog</label><br>
+        </div>
+
+</br>
+
+        <div class ="form-item"
+          <label for="image" class="image">Upload Screenshot</label>
+          <input type='file' />
+          <br>  <img id="myImg" src="#" height=1 width=1 display = none>
+        </div>
+</br>
+          <input type="submit" value="save"/>
+          <input type="reset" value ="reset">
+        </form>
+        </div>
+</br>
+
+<!-- Empty image tag? Push the src to that? -->
+    <h2>Game List</h2>
     <ul id="fav-games"></ul>
-
-    </br>
-
     <div class ="button-place">
       </div>
-
+        <script src="js/konami.js"></script>
   </body>
 </html>

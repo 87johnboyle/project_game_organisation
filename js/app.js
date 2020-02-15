@@ -3,15 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript loaded');
 
 // Run a function that prevents the page reloating and pushes a new list item to the fav games list containing form contents, finish by clearing the form
-
-//USE INNER HTML MAYBE
 const handleFormSubmit = function(event) {
   event.preventDefault()
   const resultList = document.querySelector('#fav-games');
   const newListItem = document.createElement('li');
-  newListItem.textContent = `${event.target.title.value}, ${event.target.publisher.value}, ${event.target.genre.value}, ${event.target.over18.value}, ${event.target.myImg.src}`
+  newListItem.innerHTML = `Title: ${event.target.title.value}<br> Publisher: ${event.target.publisher.value}<br> Genre: ${event.target.genre.value} <br>Status: ${event.target.completed.value} <br><img src = "${event.target.myImg.src}" width = 400 height = 200 style="padding: 5px 15px; float: left;">`
   resultList.appendChild(newListItem);
-  document.getElementbyID('#new-form').reset();
+  // document.getElementbyID('#new-form').reset();
+  input.value = ''
 }
 
 //Upon delete all, clear all children on fav games.
@@ -22,10 +21,10 @@ const handleFormDelete = function(event){
   result.innerHTML = ''
 }
 
-function imageIsLoaded() {
-  alert(this.src);  // blob url
-  // update width and height ...
-}
+// function imageIsLoaded() {
+//   alert(this.src);  // blob url
+//   // update width and height ...
+// }
 
 // Add an event listener for the submit button on our form, pass through our function
 const form = document.querySelector('#new-form')

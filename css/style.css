@@ -1,3 +1,29 @@
 body {
-  font-family: Palatino;
+  background: url('../public/images/bg.png');
+  margin-left: 15px;
+  font-family: Helvetica;
+}
+
+#form-wrapper {
+  background-color: rgba(224,224,224,0.5)
+}
+
+div {
+  width: 200px;
+}
+
+h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
 }
