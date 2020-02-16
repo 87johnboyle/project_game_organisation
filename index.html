@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
   <body>
+    <p> Organise your gaming! Log all the games you play and want to play in 2020.
+
+    Note that uploaded images work best with horizontal images. Nothing too boxy!</p>
+    </br>
     <form id="new-form">
       <div id="form-wrapper">
         <div class="form-item">
@@ -40,29 +44,33 @@
 </br>
 
         <div class = "form-item">
-          <input type=radio id="completed" name="radiob" required>
+          <input type=radio id="completed" name="radiob" value="Completed" required>
           <label for = "completed">Completed</label><br>
-          <input type=radio id="unde18" name ="radiob" required>
+          <input type=radio id="completed" name ="radiob" value = "Backlog" required>
           <label for = "completed">Backlog</label><br>
         </div>
 
 </br>
 
-        <div class ="form-item"
+        <div class ="form-item">
           <label for="image" class="image">Upload Screenshot</label>
           <input type='file' />
           <br>  <img id="myImg" src="#" height=1 width=1 display = none>
         </div>
 </br>
-          <input type="submit" value="save"/>
-          <input type="reset" value ="reset">
+          <button class = "buttonsubmit" type="submit" value="save"/><span>submit</span></button>
+
+          </br>
+
+          <button class = "buttonreset" type="reset" value ="reset"><span>reset</span></button>
         </form>
         </div>
 </br>
 
 <!-- Empty image tag? Push the src to that? -->
     <h2>Game List</h2>
-    <ul id="fav-games"></ul>
+    <div class ="testy" style = "margin-left: 5px">
+      </div>
     <div class ="button-place">
       </div>
         <script src="js/konami.js"></script>

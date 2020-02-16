@@ -5,11 +5,9 @@ body {
 }
 
 #form-wrapper {
-  background-color: rgba(224,224,224,0.5)
-}
-
-div {
+  background-color: rgba(224,224,224,0.5);
   width: 200px;
+  padding: 5px;
 }
 
 h2 {
@@ -18,12 +16,122 @@ h2 {
   padding: 0;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.testy {
+  display: flex;
+    flex-wrap: nowrap;
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
 }
 
-li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+.buttonsubmit {
+  border-radius: 4px;
+  background-color: #2ac210;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.buttonsubmit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonsubmit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonsubmit:hover span {
+  padding-right: 25px;
+}
+
+.buttonsubmit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonreset {
+  border-radius: 4px;
+  background-color: #ff0000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.buttonreset span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonreset span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonreset:hover span {
+  padding-right: 25px;
+}
+
+.buttonreset:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonsubmit {
+  border-radius: 4px;
+  background-color: #2ac210;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.buttonsubmit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonsubmit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonsubmit:hover span {
+  padding-right: 25px;
+}
+
+.buttonsubmit:hover span:after {
+  opacity: 1;
+  right: 0;
 }
