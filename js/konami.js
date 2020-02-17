@@ -1,5 +1,5 @@
 // a key map of allowed keys
-var allowedKeys = {
+let allowedKeys = {
   37: 'left',
   38: 'up',
   39: 'right',
@@ -9,17 +9,17 @@ var allowedKeys = {
 };
 
 // the 'official' Konami Code sequence
-var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+let konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
 
 // a variable to remember the 'position' the user has reached so far.
-var konamiCodePosition = 0;
+let konamiCodePosition = 0;
 
 // add keydown event listener
 document.addEventListener('keydown', function(e) {
   // get the value of the key code from the key map
-  var key = allowedKeys[e.keyCode];
+  let key = allowedKeys[e.keyCode];
   // get the value of the required key from the konami code
-  var requiredKey = konamiCode[konamiCodePosition];
+  let requiredKey = konamiCode[konamiCodePosition];
 
   // compare the key with the required key
   if (key == requiredKey) {
@@ -37,6 +37,6 @@ document.addEventListener('keydown', function(e) {
 
 function activateCheats() {
   document.body.style.backgroundImage = "url('public/images/secretBG.jpg')";
-  var audio = new Audio('public/audio/cat.mp3');
+  let audio = new Audio('public/audio/cat.mp3');
   audio.play();
 }

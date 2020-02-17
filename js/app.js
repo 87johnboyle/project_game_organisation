@@ -11,12 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultList = document.querySelector('.testy');
     const newListItem = document.createElement('p');
     const dividerItem = document.createElement('p');
+
     // your HTML
     newListItem.innerHTML = `<b>Title</b> ${event.target.title.value}<br> <b>Publisher</b> ${event.target.publisher.value}<br> <b>Genre</b> ${event.target.genre.value} <br> <b>Status</b> ${form.completed.value} <br><img src = "${event.target.myImg.src}" width = 400 height = 200 style="float: left;">`;
+
     dividerItem.innerHTML = `<div style="border-left:1px solid #000;height:320px; margin-left: 5px; margin-right: 5px"></div>`
+
     //dump the html inspect
+
     resultList.appendChild(newListItem);
     resultList.appendChild(dividerItem);
+
     // clear form
     input.value = ''
   }
